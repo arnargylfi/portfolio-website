@@ -142,6 +142,8 @@
 }
 
 .videowrapper {
+    width: 560;
+    height: 315;
     position: relative;
     padding-bottom: 10%;
     margin-top: 5%;
