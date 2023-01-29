@@ -4,34 +4,41 @@
     padding: 0;
 }
 
-.arnar-uti  {position: absolute;
+.arnar-uti  {display: inline-block;
+    float: right;
+    position: relative;
                     width: 40%;
                     border-radius: 50px;
+    
                     }
-.CVwrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 15px;
-    text-align: left;
-    font-size: 14pt;
-    font-family: Lora,serif;;
+.CVWrapper {
+  max-width: 50%;
 }
-.CVleft  {display: inline-block
-    position: relative;
-    float: left;
-    margin: 15px 15px;
-                    width: 13%;
-                    }
 
-.texti {position: relative;
-                color: black;
-                 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+.col {
+
+  width: 50%;
+}
+th, td {
+    white-space: nowrap;
+    padding: 20px 30px ;
+}
+table, th, td {
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+    box-shadow: 1px 1px 0 red;
+    border-collapse: collapse;
+}
+
         
-.linkar {position: relative;
-                margin-left: 20px;
-                color: darkblue;
-                text-decoration: underline}
 
 
 .header{
@@ -107,11 +114,12 @@
 }
         
         a {
-            transition: background .5s ease,color .5s ease,opacity .5s ease;
+            transition: all .5s ease,color .5s ease,opacity .5s ease-in-out;
         }
         a:hover {
   color:#03a9f4;
-  background-color: ghostwhite
+  background-color: ghostwhite;
+  transform: scale(1.1);
 }
         
         .verkefniinfo{
@@ -171,8 +179,8 @@ nav ul li a{
             transition: background .5s ease,color .5s ease,opacity .5s ease;
         }
 nav ul li a:hover{
-            color:#E0FEFF;
-  background-color: darkblue
+            color:red;
+  background-color: lightgoldenrodyellow
         }
 
 
