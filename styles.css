@@ -9,7 +9,7 @@
     position: relative;
                     width: 40%;
                     border-radius: 50px;
-    margin: 1% 5%
+    margin: 1% 5%;
                     }
 .CVWrapper {
 }
@@ -28,11 +28,11 @@ th, td {
     padding: 20px 30px ;
 }
 table, th, td {
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
-    box-shadow: 1px 1px 0 red;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 1px 1px 0 black;
     border-collapse: collapse;
     margin: 0 auto;
 }
@@ -158,7 +158,8 @@ table, th, td {
 
 
  nav{
-            background-color: #E0FEFF;
+            background-color: burlywood
+;
             display: flex;
             width: 100%;
             font-size: 100%;
@@ -181,6 +182,12 @@ nav ul li a:hover{
             color:red;
   background-color: lightgoldenrodyellow
         }
+
+
+::selection {
+    background-color: lightcyan;
+    color: #111;
+}
 
 
 
