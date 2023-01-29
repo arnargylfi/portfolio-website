@@ -12,21 +12,19 @@
     margin: 1% 5%
                     }
 .CVWrapper {
-  max-width: 50%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10%;
+  margin: 2% 7%;
 }
 
 .col {
 
   width: 50%;
 }
-th, td {
-    white-space: nowrap;
+th, td, tr {
     padding: 20px 30px ;
 }
 table, th, td {
@@ -36,6 +34,7 @@ table, th, td {
     border-left: 1px solid red;
     box-shadow: 1px 1px 0 red;
     border-collapse: collapse;
+    align-content: center;
 }
 
         
