@@ -17,7 +17,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 2% %;
+  margin: 2% 2%;
 }
 
 .col {
@@ -110,8 +110,8 @@ table, th, td {
         }
         a:hover {
   color:#03a9f4;
-  background-color: ghostwhite;
-  transform: scale(1.1);
+  background-color: lightgrey;
+  transform: scale(1.05);
 }
         
         .verkefniinfo{
@@ -172,7 +172,7 @@ nav ul li a{
         }
 nav ul li a:hover{
             color:red;
-  background-color: lightgoldenrodyellow
+    background-color: inherit
         }
 
 
