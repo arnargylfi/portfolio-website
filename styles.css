@@ -101,6 +101,7 @@ table, th, td {
         
     .verkefni-myndir {
     width: 250px;
+    max-height: 1024px;
     margin-right: 24px;
         
 }
@@ -177,8 +178,8 @@ nav ul li a:hover{
 
 
 ::selection {
-    background-color: lightcyan;
-    color: #111;
+    background-color: saddlebrown;
+    color: white;
 }
 
 
