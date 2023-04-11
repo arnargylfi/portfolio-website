@@ -7,12 +7,12 @@
     <title>VÉL608</title>
     <title>Project 1</title>
     <link rel="stylesheet" href="../styles.css">
-    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 </head>
 
     
     
-<body>
+<body> 
      <nav>
                 <ul >
                     <li style = "display: block">Email: <a style ="text-decoration:underline" href="mailto:arnargylfi01@gmail.com">arnargylfi01@gmail.com </a></li>
@@ -29,17 +29,34 @@
         
         <h1 class = header>Project 2</h1>
         <h2 class = header>Instructions</h2>
-        <p>     </p>
-        <h3 class = header>The process</h3>
-        
-    
-        </div>
-             <div class = videowrapper>
-                 <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
-    
-    ksæaksd
-  
+        <p>  Design a parametric, press-fit model of building blocks. The model must be scalable in different ways (material thickness, height and width as the student likes), implemented with parameters in software of your choice.   </p>
 
+        <h3 class = header> Solution</h3>
+To efficiently use my time, I decided to combine this assignment with a group project in my Mechatronics course, which was to design and manufacture a soup-feeding robot. For this assignment I will manufacture the frame for the robot. We began by brainstorming ideas and sketching them on a board.
+
+        <img src="../images/verkefni2_tafla.jpg"  width = 75%>
+        <p> after deciding on a design I started working in fusion360 drawing our idea, keeping in mind to keep all sizes parameterized. </p>
+        <img src = "../images/verkefni2/parameters1.png" width = 75%>
+        <img src = "../images/verkefni2/parameters2.png" width = 75%>
+        <p>Here can we see the design where the parameters of the angle are changed from 34 degrees to 20 and the thickness is decreased. The idea was to have two of these components, attach a motor at the bottom and a wheel at the top, connected by a belt. A spoon would be affixed to the belt, which would then move in a single motion upwards and forwards to serve soup, as can be seen later. I drew some more simple things to fasten and connect and stabilise the frame. Below is a 3d rendering of the final design. </p>
+       
+        
+        <model-viewer src = "../images/verkefni2/giraffi3d.glb" camera-controls > </model-viewer>
+        <p>
+        To account for kerf size and to prepare the file for laser cutting I referred to the instructions provided in 
+            <a href="https://www.youtube.com/watch?v=D1Btaqhog9E&t=1s" target="_blank" > this video</a>. I click on <it>modify</it> -> <it>align</it> in the <it>solid</it> tab flatten the components in a square of the size of our laser cutter . I then rearranged the objects to fit a 50cm x 50cm square.</p>
+        <img src = "../images/verkefni2/lasercut.png" width = 65%> 
+        <p>For guidance on adjusting for the kerf size, see the <a href="https://www.youtube.com/watch?v=D1Btaqhog9E&t=159s" target="_blank" > video </a> referenced above starting from the 2:39 mark. The file is then saved as a DXF file and sent to the laser cutter. Below are images of the final product and a video where we can see it in action.</p></div>
+        <div></div>
+        
+        <div style = "position: relative; padding: 40px; text-align: center" >
+            <img src="../images/verkefni2/giraffmynd1.jpg" width="23%" style="display: inline-block;">
+            <img src="../images/verkefni2/giraffmynd2.jpg" width = 23% style="display: inline-block;">
+            <img src="../images/verkefni2/giraffmynd3.jpg" width = 23% style="display: inline-block;">
+            <img src="../images/verkefni2/giraffmynd4.jpg" width = 23% style="display: inline-block;">
+        </div>
+     <div class = "videowrapper"> <iframe src="https://www.youtube.com/embed/fJ66ifzeeD0" width = "853" height = "480" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe></div> 
+            
+    
     </body>
 </html>
