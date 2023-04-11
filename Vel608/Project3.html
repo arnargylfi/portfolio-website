@@ -7,6 +7,7 @@
     <title>VÉL608</title>
     <title>Project 1</title>
     <link rel="stylesheet" href="../styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     
 </head>
 
@@ -29,15 +30,34 @@
         
         <h1 class = header>Project 3</h1>
         <h2 class = header>Instructions</h2>
-        <p>     </p>
-        <h3 class = header>The process</h3>
+        <p>  Design models for 3D printing that could not be done with subtractive manufacturing (additive vs subtractive). Print the item.
+3D Scan an object, e.g. by photogrammetry. Show the progress on your home page.   </p>
+        <h3 class = header>Process</h3>
+        <p>
+        My idea was to 3d scan my hand in a shape such that it could serve as a guitar mount. My first attempt was to use 3D Zephyr as was recommended. It can use images to construct 3D models. I began by holding my guitar, then removing the guitar from the hand trying my best to maintain the same hand-shape, then having my father take a video from all angles of my hand. Then I used 3D Zephyr's in-built feature to convert the video to multiple images. I took many videos and made many attempts but 3D zephyr always failed to convert the images to a 3D model, only giving 4 or 5 points for a model. </p><br>
+        <p> Later one of my classmates suggested that I use a particular 3D scanning application and scan my hand with an iPhone. They pointed out that an iPhone was required for this purpose and an Android phone, which is what I have, would not suffice. Nonetheless I looked up a 3D scannnig app on the Play Store and found <a href="https://play.google.com/store/apps/details?id=ai.polycam&hl=en&gl=US" target="_blank">Polycam </a>. With the same method as before I managed to get a perfectly good scan of my hand, I exported the scan in the only available free format which was .GLTF or .glb. </p>
+         <model-viewer src = "../images/verkefni3/hond.glb" camera-controls > </model-viewer>
+        <p>Clearly the scan wasn't perfect as there is some sort of spike sticking out of the back of my hand. The next step was to modify the scan to make it fit for 3D printing.<br>
+        It's impossible to import glb and GLTF files into fusion so I converted the GLTF file to an obj file online using <a href="https://products.aspose.app/3d/conversion/gltf-to-obj" target="_blank">this website</a> which was found with a quick google search and imported it into Fusion 360</p><br> 
+        I relied heavily on <a href="https://www.youtube.com/watch?v=bFsxu20lw90" target="_blank">this video</a> to repair and modify my 3D scan.  
+        I began by closing the all holes in the model by clicking on the warning icon that is highlited on the left, and then selecting "close holes" 
+        <img src = "../images/verkefni3/close-holes.png" width = 100% >
+        <p> Tthe next step was to remove that spike sticking out of my hand. To do that, under the <i> Mesh</i> tab I select <i> Modify </i> -> <i>Plane cut</i> and select <i> Split body</i> in the <i> Type</i> menu.  I use the arrows and rotation sliders to get the plane in the right spot to remove the spike. </p>
+        <img src="../images/verkefni3/plane-cut.png" width = 100%> 
+        <p> This leaves me with another hole which I close using the same method as before
+        <br>
+        I then noticed that the size of the hand is only a few millimeters, that the scanner didn't capture the actual size of the hand. To fix this I measured the distance between the knuckle of my thumb and the tip of my thumb in Fusion and I measured that same size in real life on my actual hand and scaled the model accordingly under <i> Mesh -> Modify -> Scale Mesh</i>  </p> <img src = "../images/verkefni3/Þumall.png" width = 100%>
+        <p> This turned out to be a poor method as it's difficult to measure between those exact points on my actual hand and we only get a rough estimate. Later it turns out that the hand was too small and the guitar didn't fit. A smarter move would have been to measure the neck of my guitar and determine what the space between the thumb and the rest of the fingers need be for a nice fit. <br> I then designed a basic square base to support the hand and mount it onto a wall. </p> <img src = "../images/verkefni3/flötur.png" width = 100%>
+        <p> Following the instructions in the video referenced earlier I used <i> Tesselate</i> in the <i> Mesh</i> tab to convert the solid body base in to a mesh. This was unnecessary and converting the mesh of the hand in to a solid body might have made more sense as solid bodies are easier to modify in Fusion 360 than Meshes. The advantage of not converting the hand in to a solid body is that it contains lot of mesh nodes and might be result in an error or take long to create.<br> After spending some time moving the hand in to the position I want relative to the flat platform I combine the two meshes by selecting  <i>Modify -> combine </i> and under <i> Operation </i> I select <i> Merge</i> to combine them  
+        <br> To remove rough edges and bumps that came from the scan I used the <i> Smooth </i> Function under the <i> Modify </i> drop-down menu. Lastly I wanted to add holes that could be used to fasten the guitar mount on a wall. I did this by converting the mesh in to a solid body, but I needed to reduce the number of faces on the mesh to reduce complexity. I selected <i>Modify -> Reduce </i> and then <i> Modify-> Convert Mesh</i> to turn it into a solid body so that I could sketch small holes in each of the corners and extrude. The final result can be seen below </p>
+          <model-viewer src = "../images/verkefni3/gitarhald-final.glb" camera-controls > </model-viewer>
+        <p> Finally I export the model in to <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank"> Prusa Slicer</a>. In the Prusa Slicer configuration wizard I select the printer we were using which was Prusa MK3+. Finally the G-code was exported from Prusa Slicer on to a USB drive which was plugged in to the 3D printer and printing commenced. It took 17 hours and this was the final product </p>
+        <img src="../images/verkefni3/hond-bord.jpg" width = 100%> 
+        <p> As stated earlier the hand was too small for the guitar to fit but the hand could be used for other functions </p>
+        <img src="../images/verkefni3/hond-bref.jpg" width = 100%> 
+        <p> I wanted to make it work as a guitar mount so I tried putting the hand in hot water to soften the plastic and then molding the hand, increasing the space for the guitar. This worked but the guitar keeps slipping down the hand, there's not enough friction between the guitar and the plastic. I plan to glue rubber or some high-friction material on the part of the hand that is in contact with the guitar. I will update the website later. </p>
         
-    
-        </div>
-             <div class = videowrapper>
-                 <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
-  
+    </div>  
 
     </body>
 </html>
