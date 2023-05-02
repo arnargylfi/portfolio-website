@@ -160,6 +160,55 @@ table, th, td {
 }
 
 
+/* DROPDOWONMENY */
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: left;
+  color: black;
+  padding: 3% 3%;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  display: flow-root;
+  overflow:show;
+}
+.dropdown .dropbtn:hover {
+    color:red;
+    background-color: inherit
+}
+
+.dropdown .dropbtn {
+  font-size: 100%;  
+  border: none;
+  outline: none;
+    display: flex;
+  color: black;
+  display: block;
+  margin: 10%;
+background-color: inherit;
+  font-family: inherit;
+}
+
+/* NAVIGATION TAB*/
+
  nav{
             background-color: burlywood;
             display: flex;
