@@ -36,14 +36,22 @@
     
     <div class = "Section_wrapper">
         
-        <h1 class = header>Soup Robot</h1>
-        <p style = "font-style: italic; font-size: 110%">January 22. 2023</p>
-        <h2 class = header>Instructions</h2>
-        <h3 class = header>The process</h3> 
+        <h1 class = header>Alarm clock that really gets you out of bed in the morning</h1>
     </div>
+    
 
     <div class = "Section_wrapper">
-        Nothing to see here yet.
+                <h2 class = header>The plan</h2>
+        
+        Sometimes it's really hard to get out of bed in the morning. Many know the feeling of wasting precious hours simply lying in bed shackled by their own lazines. The plan is to make an alarm clock that only stops ringing once it measures a heartbeat above a certain threshold. This ensures that the user of the alarm clock gets his heart rate and core body temperature up, which will properly wake the user up and disable him or her from falling back asleep. 
+        <h3 class= header> Components </h3>
+        For this project all that was needed was a microcontroller, some kind of buzzer, a pulsesensor and a screen. 
+        I used the Arduino UNO and a breadboard.<br>
+        <a href="https://pulsesensor.com/" target="blank"> This pulse sensor.</a> <br>
+        A buzzer that I got from disassembling an old alarm clock which turned out to be a <a href = "https://www.google.com/search?q=piezo+buzzerr&sxsrf=APwXEdfOnS2XN8H0Cq2JCxW_GzSMm3spuA%3A1683939592334&ei=COFeZLyhE-KbhbIPvYu6gAM&ved=0ahUKEwi8xeTpi_H-AhXiTUEAHb2FDjAQ4dUDCA8&uact=5&oq=piezo+buzzerr&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIECCMQJzIECCMQJzIKCAAQgAQQFBCHAjIICAAQigUQkQIyCAgAEIoFEJECMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCCMQsAIQJzoHCAAQDRCABEoECEEYAFCUAljBBWCgBmgBcAF4AIAB4wGIAbYEkgEFMC4yLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp" target="blank"> Piezo buzzer</a>.<br>
+        And finally a <a href="https://www.google.com/search?q=tp28017&source=lmns&bih=714&biw=1536&hl=en&sa=X&ved=2ahUKEwit24jNjPH-AhUatycCHRutDQQQ_AUoAHoECAEQAA"> resistive touch screen</a> compatible with the Arduino UNO.<br>
+        <h3 class = header> Execution </h3>
+        Initially I planned on using a simple non-touch screen and buttons for this project, but I accidentally bought a touch screen so I ended up incorporating that in to the product which turned out to complicate it  considerably. The touch screen takes nearly all of the available analog and digital pins and the shield is designed to be placed directly on top of the arduino, but this would make the few pins that are left over on the arduino inaccessible so I connected the touch screen to the arduino manually with wires. 
     </div>
     </body>
 </html>
